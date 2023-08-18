@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h1 class="card-title">Quote</h1>
+                    <form action="/quote" method="post">
+                        <div class="mb-3">
+                            <label for="symbol" class="form-label">Enter Symbol:</label>
+                            <input id="symbol" autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+                        </div>
+                        <button class="btn btn-primary" type="submit">Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h1 class="mt-4">Stock Portfolio</h1>
+    {% if not database %}
+        <p>No stocks in your portfolio.</p>
+        <p>Available amount: {{ cash[0]["cash"] }}</p>
+        <a href="/buy">Buy Stocks</a>
+    {% else %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in database %}
+                    <tr>
+                        <td>{{ row["symbol"] }}</td>
+                        <td>{{ row["shares"] }}</td>
+                        <td>{{ row["price"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total Amount</th>
+                    <th>{{ total_shares }}</th>
+                    <th>{{ cash[0]["cash"] }}</th>
+                </tr>
+            </tfoot>
+        </table>
+    {% endif %}
+</div>
+{% endblock %}
