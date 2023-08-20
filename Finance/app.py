@@ -1,4 +1,5 @@
 import os
+from re import template
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -238,3 +239,7 @@ def sell():
 
         flash("Sold!!")
         return redirect("/")
+
+@app.route("/about")
+def about():
+    return render_template("/about.html")
