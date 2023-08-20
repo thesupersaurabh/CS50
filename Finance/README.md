@@ -1,6 +1,7 @@
 # C$50 Finance
 
 C$50 Finance is a web application that allows users to manage a virtual stock portfolio. It provides features for buying and selling stocks, getting stock quotes, and viewing transaction history. This project was initially provided as Problem Set 9 (pset9) in CS50's Introduction to Computer Science course, and it has been extended and deployed by me.
+**Running live on:** [https://cs50-finance-app.onrender.com/](https://cs50-finance-app.onrender.com/)
 
 ## Features
 
@@ -25,6 +26,7 @@ C$50 Finance is a web application that allows users to manage a virtual stock po
    ```bash
    flask run
 Access the application in your web browser at http://127.0.0.1:5000.
+
    
 
 
