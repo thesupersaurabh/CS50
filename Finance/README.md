@@ -16,10 +16,17 @@ C$50 Finance is a web application that allows users to manage a virtual stock po
    ```bash
    git clone https://github.com/thesupersaurabh/CS50.git
    cd CS50/Finance
-   
 2. Install the required Python packages and set up your environment variables:
-  pip install -r requirements.txt
 
+   ```bash
+   pip install -r requirements.txt
 3. Run the application:
-  flask run
-  Access the application in your web browser at http://127.0.0.1:5000.
+
+   ```bash
+   flask run
+Access the application in your web browser at http://127.0.0.1:5000.
+   
+
+
+
+
